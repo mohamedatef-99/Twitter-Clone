@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/265505339c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between flex-column position-fixed ">
+        <nav class="nav-links d-flex justify-content-between flex-column w-100 h-75 position-relative">
+            <a href="#" class="logo rounded-pill link">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="rounded-pill active link">
+                <i class="material-symbols-outlined">home</i><span>Home</span>
+            </a>
+            <a href="#" class="rounded-pill link">
+                <i class="material-symbols-outlined">tag</i><span>Explore</span>
+            </a>
+            <a href="#" class="rounded-pill link">
+                <i class="material-symbols-outlined">notifications</i><span>Notifications</span>
+            </a>
+            <a href="#" class="rounded-pill link">
+                <i class="material-symbols-outlined">email</i><span>Messages</span>
+            </a>
+            <a href="#" class="rounded-pill small link">
+                <i class="material-symbols-outlined">bookmark_border</i><span>Bookmarks</span>
+            </a>
+            <a href="#" class="rounded-pill small link">
+                <i class="material-symbols-outlined">list_alt</i><span>Lists</span>
+            </a>
+            <a href="#" class="rounded-pill small link">
+                <i class="material-symbols-outlined">person</i><span>Profile</span>
+            </a>
+            <a href="#" class="rounded-pill small link">
+                <i class="material-symbols-outlined">more</i><span>More</span>
+            </a>
+            <button type="submit" class="tweet-btn rounded-pill">Tweet</button>
+        </nav>
+        <div class="main-account">
+            <a href="#" class="d-flex justify-content-between align-items-center rounded-pill">
+                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                <div class="account-details d-flex flex-column">
+                    <span class="account-name">Elon Musk</span>
+                    <span class="account-user">@Elonmusk</span>
+                </div>
+                <i class="material-symbols-outlined">more_horiz</i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container w-100 d-flex">
+            <div class="main-feed">
+                <div class="home-bar d-flex flex-column flex-fill position-sticky top-0">
+                    <a href="#" class="home-link flex-fill">Home</a>
+                    <div class="bar d-flex flex-fill justify-content-around">
+                        <a href="#" class="flex-fill" ><div class="for-you active line">For you</div></a>
+                        <a href="#" class="flex-fill"><div class="following line">Following</div></a>
+                    </div>
+                </div>
+                <div class="tweet-section d-flex w-100">
+                    <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                    <div class="tweet-details d-flex justify-content-evenly flex-column w-100">
+                        <input class="w-100" type="text" placeholder="Whats happening?">
+                        <div class="tweet-icon d-flex justify-content-between align-items-center w-100">
+                            <ul class="d-flex">
+                                <li><i class="material-symbols-outlined">image</i></li>
+                                <li><i class="material-symbols-outlined">gif_box</i></li>
+                                <li><i class="material-symbols-outlined">poll</i></li>
+                                <li><i class="material-symbols-outlined">sentiment_satisfied</i></li>
+                                <li><i class="material-symbols-outlined">event</i></li>
+                                <li><i class="material-symbols-outlined">location_on</i></li>
+                            </ul>
+                            <button type="submit" class="tweet-bttn rounded-pill">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets d-flex w-100 position-relative">
+                    <div class="tt-card">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="profile">
+                        <div class="profile-card">
+                            <div class="first-section d-flex justify-content-between align-items-center">
+                                <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                                <button type="submit">Follow</button>
+                            </div>
+                            <div class="second-section d-flex flex-column">
+                                <a href="#">Elon Musk</a>
+                                <span>@elonmusk</span>
+                            </div>
+                            <div class="third-section d-flex justify-content-around">
+                                <span><strong>100</strong> Following</span>
+                                <span><strong>100M</strong> Followers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets-container d-flex flex-column w-100">
+                        <div class="tweets-body d-flex align-items-start justify-content-between">
+                            <a href="#" class="pofile-link">Elon Musk<span>@elonmusk .7h</span></a>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <div class="tweet-text w-100">
+                            <p>this is a tweet</p>
+                        </div>
+                        <div class="tweet-icons d-flex justify-content-between w-100">
+                            <div class="comment"><i class="material-symbols-outlined">chat_bubble_outline</i></div>
+                            <div class="retweet"><i class="material-symbols-outlined">restart_alt</i></div>
+                            <div class="love"><i class="material-symbols-outlined">favorite_border</i></div>
+                            <div class="view"><i class="material-symbols-outlined">bar_chart</i></div>
+                            <div class="share"><i class="material-symbols-outlined">upload</i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-feed ">
+                <div class="search-btn d-flex top-0 position-sticky position-relative">
+                    <i class="material-symbols-outlined position-absolute">search</i>
+                    <input type="text" placeholder="Search Twitter">
+                </div>
+                <div class="trending d-flex flex-column">
+                    <h2>What’s happening</h2>
+                    <div class="trending-item d-flex flex-column justify-content-center w-100">
+                        <div class="item-cat d-flex align-items-center justify-content-between">
+                            <span>Trending in Egypt</span>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <p>Elon Musk</p>
+                        <span>100k Tweets</span>
+                    </div>
+                    <div class="trending-item d-flex flex-column justify-content-center w-100">
+                        <div class="item-cat d-flex align-items-center justify-content-between">
+                            <span>Trending in Egypt</span>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <p>Elon Musk</p>
+                        <span>100k Tweets</span>
+                    </div>
+                    <div class="trending-item d-flex flex-column justify-content-center w-100">
+                        <div class="item-cat d-flex align-items-center justify-content-between">
+                            <span>Trending in Egypt</span>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <p>Elon Musk</p>
+                        <span>100k Tweets</span>
+                    </div>
+                    <div class="trending-item d-flex flex-column justify-content-center w-100">
+                        <div class="item-cat d-flex align-items-center justify-content-between">
+                            <span>Trending in Egypt</span>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <p>Elon Musk</p>
+                        <span>100k Tweets</span>
+                    </div>
+                    <div class="trending-item d-flex flex-column justify-content-center w-100">
+                        <div class="item-cat d-flex align-items-center justify-content-between">
+                            <span>Trending in Egypt</span>
+                            <i class="material-symbols-outlined">more_horiz</i>
+                        </div>
+                        <p>Elon Musk</p>
+                        <span>100k Tweets</span>
+                    </div>
+                    <a href="#" class="show-more">Show More</a>
+                </div>
+                <div class="follow d-flex flex-column">
+                    <h2>Who to follow</h2>
+                    <div class="follow-profile d-flex align-items-center w-100">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                        <div class="follow-details d-flex flex-column">
+                            <a href="#">Elon Musk</a>
+                            <span>@elonmusk</span>
+                        </div>
+                        <button class="follow-btn rounded-pill">Follow</button>
+                    </div>
+                    <div class="follow-profile d-flex align-items-center w-100">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                        <div class="follow-details d-flex flex-column">
+                            <a href="#">Elon Musk</a>
+                            <span>@elonmusk</span>
+                        </div>
+                        <button class="follow-btn rounded-pill">Follow</button>
+                    </div>
+                    <div class="follow-profile d-flex align-items-center w-100">
+                        <img src="img/IY9Gx6Ok_400x400.jpg" alt="image">
+                        <div class="follow-details d-flex flex-column">
+                            <a href="#">Elon Musk</a>
+                            <span>@elonmusk</span>
+                        </div>
+                        <button class="follow-btn rounded-pill">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

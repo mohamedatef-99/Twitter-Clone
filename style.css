@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    background-color: black;
+    /* min-height: 1000vh; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+    line-height: 24px;
+}
+header{
+    /* d-flex justify-content-between flex-column */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 0 0 10px 55px;
+    width: 25%;
+    height: 100%;
+    /* position: fixed; */
+}
+/* .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 75%;
+} */
+.nav-links a:not(:first-child),
+.nav-links .logo{
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 8px 25px 8px 8px;
+    margin-top: 6px;
+    color: #ffffffd6;
+}
+.nav-links .logo{
+    /* padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 1.5rem; */
+    padding: 8px 8px;
+}
+.nav-links a i{
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+.nav-links a:first-child i{
+    margin-right: 0;
+}
+.nav-links a span{
+    font-size: 18px;
+}
+.nav-links a:hover:not(:first-child){
+    background-color: rgb(47, 51, 54);
+}
+.nav-links .logo:hover{
+    background-color: rgb(9, 28, 41);
+}
+.nav-links .tweet-btn{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    width: 230px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border:none;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 100%
+}
+
+.nav-links .tweet-btn:hover{
+    background-color: rgba(29, 155, 240, 0.9);
+}
+.nav-links .active i,
+.nav-links .active span{
+    color: white;
+    font-weight: bold;
+}
+.main-account{
+    width: 250px;
+    height: 30%;
+    margin-top: 60px;
+}
+.main-account a{
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+.main-account img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+}
+.main-account .account-details{
+    flex-basis: 70%;
+    margin-left: 15px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.main-account .account-user{
+    color: rgb(110, 118, 125);
+}
+.main-account a:hover{
+    background-color: rgb(47, 51, 54);
+}
+main{
+    width: 75%;
+    height: 100%;
+    margin-left: 23%;
+}
+.main-feed{
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    width: 60%;
+}
+.main-feed .home-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(23, 22, 28, 0.5);
+    z-index: -1;
+}
+.main-feed .home-link{
+    margin: 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-feed .bar .for-you,
+.main-feed .bar .following{
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+.main-feed .bar .for-you:hover,
+.main-feed .bar .following:hover{
+    background-color: rgb(47, 51, 54);
+}
+.main-feed .bar .for-you.active::before{
+    content: "";
+    background-color: rgb(29, 155, 240);
+    height: 4px;
+    position: absolute;
+    width: 55px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 10px;
+    display: block;
+}
+.main-feed .bar .following,
+.main-feed .bar .for-you{
+    color: rgb(110, 118, 125);
+}
+.main-feed .bar .following.active::before{
+    content: "";
+    background-color: rgb(29, 155, 240);
+    height: 4px;
+    position: absolute;
+    width: 70px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 10px;
+    display: block;
+}
+.main-feed .bar .for-you.active,
+.main-feed .bar .following.active{
+    font-weight: bold;
+    color: white;
+}
+
+.tweet-section{
+    height: 120px;
+    padding: 10px 16px;
+    border-top: 1px solid rgb(47, 51, 54);
+}
+
+.tweet-section img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.tweet-details {
+    padding-top: 10px;
+    margin-left: 12px;
+}
+.tweet-details input{
+    height: 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.tweet-icon{
+    height: 60px;
+}
+.tweet-icon ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.tweet-icon ul li{
+    margin-right: 12px;
+    color: #1c88d2;
+    padding: 5px;
+    cursor: pointer;
+}
+.tweet-icon ul li:nth-last-child(1){
+    color: #0c283c;
+    margin-right: 12px;
+    padding: 5px;
+}
+.tweet-icon ul li:hover:not(:last-child){
+    background-color: rgb(9, 28, 41);
+    border-radius: 18px;
+}
+.tweet-icon .tweet-bttn{
+    background-color: rgb(49, 106, 145);;
+    color: #a89d9d;
+    width: 75px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border:none;
+    margin: 0;
+    transition-duration: 0.2s;
+    top: 100%
+}
+.tweet-icon .tweet-bttn:hover{
+    background-color: rgb(29, 155, 240);
+    color: white;
+}
+.tweets{
+    min-height: 100px;
+    padding: 12px 16px 0 16px;
+    border-top: 1px solid rgb(47, 51, 54);
+    cursor: pointer;
+}
+.tweets img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.tweets .tweets-container{
+    margin-left: 12px;
+}
+.tweets i{
+    color: rgb(110, 118, 125);
+    font-size: 1.5rem;
+}
+.tweets .tweets-body{
+    font-weight: bold;
+}
+.tt-card:hover .profile-card{
+    display: block;
+}
+.tweets-body span{
+    color: rgb(110, 118, 125);
+    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 6px;
+}
+.tweet-text{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 10px;  
+}
+.tweet-icons{
+    padding-right: 50px;
+    align-items: center;
+}
+.tweets .tweet-icons .comment:hover i,
+.tweets .tweet-icons .share:hover i,
+.tweets .tweet-icons .view:hover i{
+    color: #1c88d2;
+}
+.tweets .tweet-icons .retweet:hover i{
+    color: #2ba550;
+}
+.tweets .tweet-icons .love:hover i{
+    color: #971c1c;
+}
+
+.side-feed{
+    width: 40%;
+    padding: 0px 3%;
+}
+
+.side-feed .search-btn{
+    height: 55px;
+    max-width: 355px;
+    padding-top: 5px;
+    background-color: black;
+}
+.side-feed .search-btn i{
+    color: #999595;
+    top: 17px;
+    margin-left: 12px;
+}
+.side-feed .search-btn input{
+    background-color: #212327;
+    border-radius: 9999px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    padding-left: 35px;
+    font-size: 1rem;
+    color: white;
+    line-height: 20px;
+}
+.side-feed .search-btn input:focus{
+    background-color: black;
+}
+
+.side-feed .trending{
+    height: 460px;
+    max-width: 355px;
+    border-radius: 16px;
+    background-color: #212327;
+    margin-top: 16px;
+}
+.trending h2,
+.follow h2{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 15px;
+}
+.trending .trending-item{
+    height: 90px;
+    margin-top: 5px;
+    padding: 0 15px;
+    color: rgb(110, 118, 125);
+    font-size: 1rem;
+}
+.trending span{
+    font-size: .9rem;
+    font-weight: 400;
+}
+.trending p{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+.trending .trending-item:hover,
+.follow-profile:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+}
+.trending .show-more{
+    color: #1c88d2;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 15px 15px;
+}
+.follow{
+    height: 250px;
+    max-width: 355px;
+    border-radius: 16px;
+    background-color: #212327;
+    margin-top: 16px;
+}
+.follow h2{
+    padding: 15px 15px 5px;
+}
+.follow .follow-profile{
+    height: 70px;
+    /* margin-top: 5px; */
+    padding: 0 15px 0px;
+}
+.follow-profile img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+}
+.follow .follow-details{
+    margin-left: 10px;
+}
+.follow-details a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.follow-details a:hover{
+    text-decoration: underline;
+}
+.follow-details span{
+    color: rgb(110, 118, 125);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.follow-profile .follow-btn{
+    width: 75px;
+    height: 35px;
+    margin-left: 12px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: .9rem;
+    margin-left: 80px;
+}
+
+
+/* styles for small screens */
+/* @media only screen and (max-width: 767px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links span,
+    .nav-links button,
+    .nav-links .small i,
+    .main-account .account-details span,
+    .main-account i{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+}  */
+  /* styles for large screens */
+/* @media only screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        width: 10%;
+        padding: 10px 0;
+    }
+    main{
+        margin-left: 10%;
+    }
+    header span{
+        display: none;
+    }
+    header .tweet-btn{
+        width: 55px;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+    header .main-account{
+        display: flex;
+        justify-content: center;
+    }
+    header.main-account i{
+        display: none;
+    }
+    header .account-details{
+        display: none;
+    }
+    .nav-links{
+        align-items: center;
+    }
+    .nav-links a i{
+        margin-right: 0;
+    }
+    .nav-links a, .main-account a{
+        padding: 10px 10px;
+    }
+}
+
+/* styles for iPad 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+} */
+
+.profile-card{
+    width: 300px;
+    height: 200px;
+    border-radius: 16px;
+    background-color: rgb(63, 61, 61);
+    position: absolute;
+    transform: translate(-50%, 6%);
+    display: none;
+    z-index: 9999;
+}
+
+.profile-card .first-section{
+    margin: 10px 15px 5px;
+}
+.first-section button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.profile-card img{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 20px;
+}
+.second-section a{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+.second-section a:hover{
+    text-decoration:underline;
+}
+.second-section span{
+    font-size: 1rem;
+    margin-left: 15px;
+    color: rgb(118, 124, 129);
+}
+.third-section{
+    margin-top: 15px;
+}
+.third-section span strong{
+    color: white;
+    font-size: .9rem;
+    margin-right: 3px;
+}
+.third-section span{
+    color: rgb(118, 124, 129);
+    font-size: 1rem;
+}

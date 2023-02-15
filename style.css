@@ -8,33 +8,19 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     background-color: black;
-    /* min-height: 1000vh; */
 }
 
 a{
     text-decoration: none;
     color: white;
     font-size: 15px;
-    /* font-weight: bold; */
     line-height: 24px;
 }
 header{
-    /* d-flex justify-content-between flex-column */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     padding: 0 0 10px 55px;
     width: 25%;
     height: 100%;
-    /* position: fixed; */
 }
-/* .nav-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 75%;
-} */
 .nav-links a:not(:first-child),
 .nav-links .logo{
     padding-top: 1.5rem;
@@ -47,11 +33,6 @@ header{
     color: #ffffffd6;
 }
 .nav-links .logo{
-    /* padding-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    font-size: 1.5rem; */
     padding: 8px 8px;
 }
 .nav-links a i{
